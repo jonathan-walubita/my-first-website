@@ -2,27 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <a href="index.html" class="logo">MyLogo</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- This now points to your logo image file -->
+        <a href="index.html" class="logo"><img src="images/LOGO JAY.jpg" alt="My Logo"></a>
     </header>
 
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My First Website!</h1>
+            <p>Course Name: Interactive Web Development</p>
+        </div>
+    </section>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h1>welcome to my first website!</h1>
-        <p>This is a paragraph about my new website. I am learning interactive web development.</p>
-        <img src="https://via.placeholder.com/400" alt="A placeholder image">
+        <h2>About This Project</h2>
+        <p>This website was built as part of the Interactive Web Development project.</p>
     </main>
 
 </body>

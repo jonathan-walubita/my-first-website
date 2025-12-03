@@ -2,82 +2,94 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f4f4f4; /* Light grey background */
+    background-color: #f4f4f4; /* A light grey background for the whole site */
+    color: #333; /* Default text color */
 }
 
-/* Header and navigation bar styles */
+/* Header: This is the top bar that will hold the logo */
 header {
-    background-color: #333; /* Dark grey background for the header */
-    color: white;
-    padding: 10px 0;
+    background-color: #2c3e50; /* A modern, dark blue-grey */
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
 }
 
-nav ul {
+.logo {
+    text-decoration: none;
+}
+
+/* Styles for the logo image itself */
+.logo img {
+    height: 40px; /* Sets the height of the logo to 40 pixels */
+    width: auto; /* Lets the width adjust automatically */
+    vertical-align: middle; /* Helps keep it centered vertically */
+}
+
+/* The Hero Section on the homepage */
+.hero {
+    background-image: url('images/ICUZAM.jpg'); /* This uses your image */
+    background-size: cover; /* Makes the image cover the whole area */
+    background-position: center; /* Centers the image */
+    color: white;
+    text-align: center;
+    padding: 80px 20px; /* Makes the section nice and tall */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text so it's readable */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* The main navigation bar, now below the hero/main content */
+.main-nav {
+    background-color: #34495e; /* A slightly lighter blue-grey, matching the header family */
+    padding: 15px 0;
+}
+
+.main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+.main-nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-/* Main content styles */
-main {
-    text-align: center;
-    padding: 40px;
-}
-
-h1 {
-    color: #333; /* Dark grey color for the heading */
-}
-
-p {
-    color: #555; /* Slightly lighter grey for the paragraph */
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* --- NEW STYLES TO ADD --- */
-
-/* This finds the links in your navigation bar and makes them blue */
-nav ul li a {
-    color: #007bff; /* A nice, standard blue color */
+.main-nav ul li a {
+    color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* This makes the links a lighter blue when you hover over them */
-nav ul li a:hover {
-    color: #5dade2; /* A lighter blue for the hover effect */
+/* Main content area for the text on all pages */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px; /* Prevents text from becoming too wide on big screens */
+    margin: 0 auto; /* Centers the main content block */
+    min-height: 40vh; /* Ensures there's enough space on pages with little content */
 }
 
-/* Logo styles */
-.logo {
-    color: white; /* We'll keep the logo white for contrast */
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    float: left; /* Puts the logo on the left */
-    margin-left: 20px;
-    line-height: 50px; /* Helps vertically center the logo text */
+/* Styles for the contact page details */
+.contact-details {
+    margin-top: 30px;
+    text-align: left; /* Aligns the contact info to the left for readability */
+    display: inline-block; /* Allows the centering from 'main' to work */
 }
 
-/* Image styles */
-main img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px; /* Adds slightly rounded corners to the image */
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h2 {
+    margin-bottom: 5px;
+    color: #3498db; /* Blue color for the contact headings */
 }
