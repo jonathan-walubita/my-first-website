@@ -27,7 +27,7 @@ header {
 
 /* The Hero Section on the homepage */
 .hero {
-    background-image: url('images/ICUZAM.jpg'); /* This uses your image */
+    background-image: url('images/ICUZAM.'); /* CORRECTED FILENAME */
     background-size: cover; /* Makes the image cover the whole area */
     background-position: center; /* Centers the image */
     color: white;
@@ -39,10 +39,12 @@ header {
 .hero h1 {
     font-size: 48px;
     margin: 0;
+    color: #9b59b6; /* NEW: Purple color for the main title */
 }
 
 .hero p {
     font-size: 20px;
+    color: #bdc3c7; /* NEW: Light grey color for the subtitle */
 }
 
 /* The main navigation bar, now below the hero/main content */
