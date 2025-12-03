@@ -40,12 +40,12 @@ header {
 .hero h1 {
     font-size: 48px;
     margin: 0;
-    color: #2980b9; /* NEW: Deep, strong blue for the main title */
+    color: #2c3e50; /* NEW: Dark, deep blue for the main title */
 }
 
 .hero p {
     font-size: 20px;
-    color: #ffffff; /* NEW: Plain white for the subtitle */
+    color: #2c3e50; /* NEW: Dark, deep blue for the subtitle */
 }
 
 /* The main navigation bar, now below the hero/main content */
