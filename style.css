@@ -24,12 +24,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 /* Main content styles */
 main {
     text-align: center;
@@ -43,4 +37,47 @@ h1 {
 p {
     color: #555; /* Slightly lighter grey for the paragraph */
     font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- NEW STYLES TO ADD --- */
+
+/* This finds the links in your navigation bar and makes them blue */
+nav ul li a {
+    color: #007bff; /* A nice, standard blue color */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* This makes the links a lighter blue when you hover over them */
+nav ul li a:hover {
+    color: #5dade2; /* A lighter blue for the hover effect */
+}
+
+/* Logo styles */
+.logo {
+    color: white; /* We'll keep the logo white for contrast */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    float: left; /* Puts the logo on the left */
+    margin-left: 20px;
+    line-height: 50px; /* Helps vertically center the logo text */
+}
+
+/* Image styles */
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; /* Adds slightly rounded corners to the image */
 }
